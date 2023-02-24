@@ -30,7 +30,7 @@ import (
 // NOTE: In the 5.x CLI releases we persisted the default to the fastly.toml
 // We no longer do that. In 6.x we use the default and just inform the user.
 // This makes the experience less confusing as users didn't expect file changes.
-const RustDefaultBuildCommand = "cargo build --bin %s --release --target wasm32-wasi --color always"
+const RustDefaultBuildCommand = "cargo build --bin \"%s\" --release --target wasm32-wasi --color always"
 
 // RustManifest is the manifest file for defining project configuration.
 const RustManifest = "Cargo.toml"
